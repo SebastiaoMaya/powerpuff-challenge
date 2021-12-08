@@ -12,7 +12,7 @@ const NavbarArea = styled(Grid)<GridProps & PositionProps>`
 
 NavbarArea.defaultProps = {
   gridArea: "navbar",
-  background: "black",
+  background: "gray.900",
   top: 0,
   boxShadow: "0px 1px 21px 0px rgba(0,0,0,0.3)",
   zIndex: 10,

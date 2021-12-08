@@ -13,9 +13,9 @@ export const UserLogout: React.FC = observer(() => {
       <Text variant="side-menu-user">{user.username}</Text>
 
       <Button
-        rightIcon={<Icon as={BiLogOutCircle} color="black" boxSize="20px" />}
-        variant="outline"
-        onClick={() => userStore.logout()}>
+        rightIcon={<Icon as={BiLogOutCircle} color="white" boxSize="20px" />}
+        onClick={() => userStore.logout()}
+        variant="primary">
         <Text variant="side-menu-logout">Logout</Text>
       </Button>
     </Stack>

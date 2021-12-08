@@ -24,12 +24,12 @@ export const SIDEMENU_NAVIGATION: NavItemProps[] = [
   {
     title: i18next.t("shared:sidemenu.home"),
     itemId: "/powerpuff-challenge",
-    elemBefore: () => <Icon as={HiHome} color="gray.600" />,
+    elemBefore: () => <Icon as={HiHome} color="white" />,
   },
   {
     title: i18next.t("shared:sidemenu.episodes.mainSection"),
     itemId: "episodesSection",
-    elemBefore: () => <Icon as={ImFileVideo} color="gray.600" />,
+    elemBefore: () => <Icon as={ImFileVideo} color="white" />,
     subNav: [
       {
         title: i18next.t("shared:sidemenu.episodes.list"),

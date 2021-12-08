@@ -89,9 +89,9 @@ const SideMenuNav: React.FC<SideNavProps> = ({
                     {item.subNav &&
                       item.subNav.length > 0 &&
                       (isActiveTab ? (
-                        <ChevronUpIcon boxSize="24px" color="grey.600" />
+                        <ChevronUpIcon boxSize="24px" color="white" />
                       ) : (
-                        <ChevronDownIcon boxSize="24px" color="grey.600" />
+                        <ChevronDownIcon boxSize="24px" color="white" />
                       ))}
                   </Flex>
 

@@ -18,7 +18,7 @@ const LoginFormBase: React.FC = () => {
   const { userStore } = useRootStoreContext();
 
   return (
-    <Flex alignItems="center" justifyContent="center" h="100vh" bg="black">
+    <Flex alignItems="center" justifyContent="center" h="100vh" bg="gray.900">
       <TopBackgroundWrapper>
         <AlphaBackground>
           <Stack spacing={4} w={["400px"]}>
@@ -30,7 +30,7 @@ const LoginFormBase: React.FC = () => {
               <Input
                 type="text"
                 placeholder="username"
-                _focus={{ borderColor: "black" }}
+                _focus={{ borderColor: "gray.900" }}
               />
             </InputGroup>
 
@@ -42,7 +42,7 @@ const LoginFormBase: React.FC = () => {
               <Input
                 type="password"
                 placeholder="password"
-                _focus={{ borderColor: "black" }}
+                _focus={{ borderColor: "gray.900" }}
               />
             </InputGroup>
 
@@ -50,9 +50,7 @@ const LoginFormBase: React.FC = () => {
               onClick={() => {
                 userStore.login();
               }}
-              background={"black"}
-              _hover={{ backgroundColor: "blackAlpha.700" }}
-              _focus={{ backgroundColor: "blackAlpha.700" }}>
+              variant="primary">
               LOGIN
             </Button>
           </Stack>

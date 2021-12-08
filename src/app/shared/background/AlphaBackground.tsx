@@ -7,7 +7,7 @@ interface Props extends BoxProps {
 
 export const AlphaBackground: React.FC<Props> = ({ children }) => (
   <Box
-    background="blackAlpha.600"
+    backgroundColor="blackAlpha.800"
     p={4}
     borderRadius="md"
     color="white"

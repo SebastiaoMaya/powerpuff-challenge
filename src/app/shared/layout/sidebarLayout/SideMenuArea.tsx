@@ -11,6 +11,7 @@ SideMenuArea.defaultProps = {
   gridArea: "sidemenu",
   px: 5,
   py: 5,
+  background: "gray.900",
   boxShadow: "0 4px 20px -4px rgba(0,0,0,0.5)",
 };
 

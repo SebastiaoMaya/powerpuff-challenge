@@ -17,6 +17,8 @@ const breakpoints = createBreakpoints({
 });
 
 export const customColors = {
+  greyBlue: "#2c2a41",
+
   brandRed: {
     50: "#ffe5e5",
     100: "#fbb9ba",
@@ -88,31 +90,41 @@ const overrides = {
     xl: `@media screen and (min-width: ${breakpoints.xl})`,
   },
   components: {
+    Button: {
+      variants: {
+        primary: {
+          backgroundColor: "black",
+          _hover: { backgroundColor: "blackAlpha.700" },
+          _focus: { backgroundColor: "blackAlpha.700" },
+          color: "white",
+        },
+      },
+    },
     Text: {
       variants: {
         "logo-text": {
-          color: "grey.600",
+          color: "white",
           fontWeight: "bold",
           fontSize: "xl",
           textTransform: "uppercase",
           py: 4,
         },
         "side-menu-nav": {
-          color: "gray.600",
+          color: "white",
           fontWeight: "bold",
           fontSize: "lg",
           textTransform: "uppercase",
           px: 2,
         },
         "side-menu-subnav": {
-          color: "gray.600",
+          color: "white",
           fontWeight: "bold",
           fontSize: "sm",
           textTransform: "uppercase",
         },
         "side-menu-user": {
           fontSize: "md",
-          color: "gray.600",
+          color: "white",
         },
         "side-menu-logout": {
           fontWeight: "bold",
