@@ -1,0 +1,12 @@
+{
+  "sidemenu": {
+    "home": "Home",
+    "episodes": {
+      "mainSection": "Episodes",
+      "list": "List"
+    }
+  },
+  "notFound": {
+    "title": "404 Not Found"
+  }
+}

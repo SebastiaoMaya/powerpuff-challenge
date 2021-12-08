@@ -1,0 +1,22 @@
+/* this css allows the usage of \n on i18n strings */
+
+#root {
+  white-space: pre-line;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb5757;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
