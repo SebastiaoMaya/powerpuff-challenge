@@ -2,6 +2,7 @@ import { Flex, Text } from "@chakra-ui/react";
 import { UserLogout } from "app/users";
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
+import { SiteLogo } from "../siteLogo";
 import { SIDEMENU_NAVIGATION } from "./constants";
 import SideMenuNav from "./SideMenuNav";
 
@@ -12,9 +13,13 @@ export const SideMenu: React.FC = () => {
   return (
     <Flex width={"100%"} maxWidth={["sideMenu"]} flexDir="column">
       {/* LOGO */}
-      <Text variant="logo-text">PowerPuff Girls</Text>
+      <SiteLogo />
       {/* SUBMENU */}
-      <Flex flexDir="column" justifyContent="space-between" height="100%">
+      <Flex
+        flexDir="column"
+        justifyContent="space-between"
+        height="100%"
+        pt={4}>
         <SideMenuNav
           activeItemId={location.pathname}
           onSelect={({ itemId }) => {

@@ -1,3 +1,4 @@
+export { TopBackgroundWrapper, AlphaBackground } from "./background";
 export { ButtonLink } from "./buttonLink";
 export { CloseButton } from "./closeButton";
 export { Divider } from "./divider";

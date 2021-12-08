@@ -20,6 +20,7 @@ ContentArea.defaultProps = {
   gridAutoRows: "min-content", // to disable rows height dynamic sizing
   py: [2, 4, 4, 4, 10],
   px: ["33px", "60px", "60px", "105px"],
+  zIndex: 2,
 };
 
 export default ContentArea;

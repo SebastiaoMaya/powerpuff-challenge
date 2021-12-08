@@ -20,5 +20,11 @@ UnstyledLink.defaultProps = {
  * @see https://github.com/chakra-ui/chakra-ui/issues/148#issuecomment-540457308
  */
 export const TextLink: React.FC<TextLinkProps> = (props: TextLinkProps) => {
-  return <UnstyledLink {...({ as: ReactRouterLink } as any)} {...props} />;
+  return (
+    <UnstyledLink
+      {...({ as: ReactRouterLink } as any)}
+      color="white"
+      {...props}
+    />
+  );
 };
