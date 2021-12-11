@@ -1,11 +1,11 @@
-import { Text } from "@chakra-ui/react";
-import { ContentAreaSidebarLayout } from "app/shared";
+import { ContentAreaMainLayout } from "app/shared";
+import { EpisodeList } from "app/tvShow";
 import React from "react";
 
 const EpisodesListPage: React.FC = () => (
-  <ContentAreaSidebarLayout>
-    <Text>Episodes List</Text>
-  </ContentAreaSidebarLayout>
+  <ContentAreaMainLayout>
+    <EpisodeList />
+  </ContentAreaMainLayout>
 );
 
 export default EpisodesListPage;

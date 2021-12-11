@@ -1,8 +1,8 @@
-import { UserStore } from "app/users/store/UserStore";
+import { TvShowStore } from "app/tvShow/store/TvShowStore";
 import React, { useContext } from "react";
 
 interface StoreContextProps {
-  userStore: UserStore;
+  tvShowStore: TvShowStore;
 }
 
 export const RootStoreContext = React.createContext<StoreContextProps>(

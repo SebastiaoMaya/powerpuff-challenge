@@ -30,5 +30,7 @@ export const MainLayout: React.FC<GridProps> = (props) => (
 );
 
 MainLayout.defaultProps = {
+  background: "greyBlue",
+  color: "white",
   height: "100%",
 };

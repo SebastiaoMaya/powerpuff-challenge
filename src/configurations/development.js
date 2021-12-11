@@ -1,4 +1,4 @@
 module.exports = {
   production: false,
-  api: "http://localhost:3000",
+  api: "https://api.tvmaze.com",
 };

@@ -18,31 +18,6 @@ const breakpoints = createBreakpoints({
 
 export const customColors = {
   greyBlue: "#2c2a41",
-
-  brandRed: {
-    50: "#ffe5e5",
-    100: "#fbb9ba",
-    200: "#F17878",
-    300: "#EB5757", //base
-    400: "#e63333",
-    500: "#cc1a19",
-    600: "#a01313",
-    700: "#730c0d",
-    800: "#460506",
-    900: "#1e0000",
-  },
-  darkRed: "#DA1818",
-
-  brandGrey: "#455A64",
-  lightestGrey: "#F2F2F2",
-  lightGrey: "#F4F3F3",
-  grey: "#E0E0E0",
-  mdGrey: "#C4C4C4",
-  darkGrey: "#455A64",
-  darkestGrey: "#828282",
-
-  lightestBlack: "#BDBDBD",
-  lightBlack: "#3D3C3C",
 };
 
 const overrides = {
