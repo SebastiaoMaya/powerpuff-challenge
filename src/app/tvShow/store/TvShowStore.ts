@@ -1,10 +1,13 @@
-import { computed, configure, flow, makeObservable, observable } from "mobx";
-import { TvShow, Episode } from "../models";
 import {
-  fetchTvShowService,
-  fetchEpisodesListService,
-  fetchEpisodeService,
-} from "../services";
+  action,
+  computed,
+  configure,
+  flow,
+  makeObservable,
+  observable,
+} from "mobx";
+import { TvShow, Episode } from "../models";
+import { fetchTvShowService, fetchEpisodesListService } from "../services";
 configure({
   enforceActions: "observed",
 });
@@ -13,9 +16,15 @@ export class TvShowStore {
   @observable private _tvShow: TvShow | undefined = undefined;
   @observable private _episodesList: Episode[] = [];
 
+  @action.bound setTvShow(tvShow: TvShow) {
+    this._tvShow = tvShow;
+  }
+
   fetchTvShow = flow(function* (this: TvShowStore) {
-    const res = yield fetchTvShowService().then((r) => (this._tvShow = r));
-    this.fetchEpisodesList(res.id);
+    yield fetchTvShowService().then((r) => {
+      this.setTvShow(r);
+      this.fetchEpisodesList(r.id);
+    });
   }).bind(this);
 
   fetchEpisodesList = flow(function* (this: TvShowStore, tvShowId: string) {
