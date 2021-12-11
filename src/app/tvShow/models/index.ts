@@ -13,9 +13,9 @@ export interface TvShow {
 
 export interface Episode {
   id: string;
-  url: string;
-  image: Image;
-  name: string;
-  number: number;
-  summary: string;
+  url?: string;
+  image?: Image;
+  name?: string;
+  number?: number;
+  summary?: string;
 }

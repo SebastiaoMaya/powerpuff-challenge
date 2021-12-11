@@ -4,6 +4,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { theme } from "styles";
 import NotFoundPage from "./NotFoundPage";
 import Homepage from "./Homepage";
+import EpisodeDetailsPage from "./EpisodeDetailsPage";
 
 const App = () => {
   return (
@@ -17,6 +18,11 @@ const App = () => {
               </NavbarArea>
               <Switch>
                 <Route exact path="/" component={Homepage} />
+                <Route
+                  exact
+                  path="/episode/:id"
+                  component={EpisodeDetailsPage}
+                />
                 <Route path="/404" component={NotFoundPage} />
                 <Redirect from="*" to="/404" />
               </Switch>

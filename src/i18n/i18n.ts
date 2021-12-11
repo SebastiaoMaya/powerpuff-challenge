@@ -1,4 +1,5 @@
 import * as SHARED_TRANSLATIONS from "app/shared/locales";
+import * as TVSHOW_TRANSLATIONS from "app/tvShow/locales";
 import { default as i18n, default as i18next } from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
@@ -20,6 +21,12 @@ i18next.addResourceBundle(
   "en",
   SHARED_TRANSLATIONS.SHARED_NAMESPACE,
   SHARED_TRANSLATIONS.EN
+);
+
+i18next.addResourceBundle(
+  "en",
+  TVSHOW_TRANSLATIONS.TVSHOW_NAMESPACE,
+  TVSHOW_TRANSLATIONS.EN
 );
 
 export default i18n;

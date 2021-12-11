@@ -9,9 +9,9 @@ export const EpisodeListBase = () => {
   const { tvShowStore } = useRootStoreContext();
 
   return tvShowStore.episodesList ? (
-    <Flex flexDir="row" flexWrap="wrap">
+    <Flex flexDir="row" flexWrap="wrap" justifyContent="center">
       {tvShowStore.episodesList.map((episode: Episode) => (
-        <EpisodeCard key={`episode_${episode.id}`} episode={episode} />
+        <EpisodeCard key={`episode_${episode.id}`} {...episode} />
       ))}
     </Flex>
   ) : (

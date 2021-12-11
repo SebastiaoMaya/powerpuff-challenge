@@ -1,16 +1,6 @@
-import {
-  action,
-  computed,
-  configure,
-  flow,
-  makeObservable,
-  observable,
-} from "mobx";
+import { action, computed, flow, makeObservable, observable } from "mobx";
 import { TvShow, Episode } from "../models";
 import { fetchTvShowService, fetchEpisodesListService } from "../services";
-configure({
-  enforceActions: "observed",
-});
 
 export class TvShowStore {
   @observable private _tvShow: TvShow | undefined = undefined;

@@ -1,4 +1,5 @@
 import { Stack, Text } from "@chakra-ui/layout";
+import i18next from "i18next";
 import { observer } from "mobx-react";
 import React, { useEffect } from "react";
 import { useRootStoreContext } from "rootStore";
@@ -16,7 +17,9 @@ export const TvShowInfoBase = () => {
     <Stack alignItems="center">
       <Text
         dangerouslySetInnerHTML={{
-          __html: tvShowStore.tvShow?.summary ?? "",
+          __html:
+            tvShowStore.tvShow?.summary ??
+            i18next.t("tvshow:tvShowInfo.noSummary"),
         }}
         py={[2, 4, 6]}
       />

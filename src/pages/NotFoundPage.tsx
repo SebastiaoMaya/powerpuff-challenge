@@ -5,7 +5,7 @@ import React from "react";
 
 const NotFoundPage: React.FC = () => (
   <ContentAreaMainLayout>
-    <Text fontSize="7xl">{i18next.t("shared:notFound.title")}</Text>
+    <Text fontSize={["lg", "7xl"]}>{i18next.t("shared:notFound.title")}</Text>
   </ContentAreaMainLayout>
 );
 

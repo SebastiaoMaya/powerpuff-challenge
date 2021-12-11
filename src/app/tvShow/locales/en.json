@@ -1,0 +1,11 @@
+{
+  "episodeDetails": {
+    "episodeNotFound": "Episode not found"
+  },
+  "tvShowInfo": {
+    "noSummary": "This show has no summary"
+  },
+  "episodeInfo": {
+    "noSummary": "This episode has no summary"
+  }
+}

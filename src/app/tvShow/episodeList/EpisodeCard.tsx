@@ -1,15 +1,12 @@
-import { Image } from "@chakra-ui/image";
-import { Box, BoxProps, Stack, Text, Flex } from "@chakra-ui/layout";
+import { Box, Stack, Text } from "@chakra-ui/layout";
+import { Image } from "app/shared";
 import React from "react";
+import { useHistory } from "react-router";
 import { Episode } from "../models";
-import { TempNotFound } from "./TempNotFound";
 
-interface Props extends BoxProps {
-  episode: Episode;
-}
-
-export const EpisodeCard: React.FC<Props> = ({ episode, ...rest }) => {
-  const { name, image } = episode;
+export const EpisodeCard: React.FC<Episode> = ({ id, name, image }) => {
+  const history = useHistory();
+  const handleOnClick = () => history.push(`/episode/${id}`);
 
   return (
     <Box p={[2, 4]}>
@@ -21,11 +18,10 @@ export const EpisodeCard: React.FC<Props> = ({ episode, ...rest }) => {
         borderRadius={4}
         bg="gray.800"
         justifyContent="space-between"
-        _hover={{ bg: "gray.700", cursor: "pointer" }}>
+        _hover={{ bg: "gray.700", cursor: "pointer" }}
+        onClick={handleOnClick}>
         <Text h="20%">{name}</Text>
-        <Box>
-          {image?.medium ? <Image src={image.medium} /> : <TempNotFound />}
-        </Box>
+        <Image src={image?.medium} />
       </Stack>
     </Box>
   );
