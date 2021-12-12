@@ -9,6 +9,6 @@ const configuration = {
   },
 };
 
-export const axios = Axios.create(configuration);
+export const network = Axios.create(configuration);
 
-export default axios;
+export default network;

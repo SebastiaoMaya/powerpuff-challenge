@@ -12,7 +12,6 @@
     "framer-motion": "^4.1.17",
     "i18next": "^20.3.3",
     "i18next-browser-languagedetector": "^6.1.2",
-    "jest-mock-axios": "^4.5.0",
     "mobx": "^6.3.2",
     "mobx-react": "^7.2.0",
     "react": "^17.0.2",
@@ -26,9 +25,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --outputFile reports/test-report.xml",
+    "test": "jest --outputFile reports/test-report.xml --no-cache",
     "test:updateSnapshot": "jest --updateSnapshot --outputFile reports/test-report.xml",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clear_jest": "jest --clearCache"
   },
   "eslintConfig": {
     "extends": [

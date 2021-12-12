@@ -1,8 +1,8 @@
-import axios from "network";
+import network from "network";
 import { Episode, TvShow } from "../models";
 
 export const fetchTvShowService = async (): Promise<TvShow> => {
-  const { id, summary, image } = await axios
+  const { id, summary, image } = await network
     .get("/singlesearch/shows?q=powerpuff")
     .then((res) => res.data);
 
@@ -12,4 +12,4 @@ export const fetchTvShowService = async (): Promise<TvShow> => {
 export const fetchEpisodesListService = async (
   tvShowId: string
 ): Promise<Episode[]> =>
-  await axios.get(`/shows/${tvShowId}/episodes`).then((res) => res.data);
+  await network.get(`/shows/${tvShowId}/episodes`).then((res) => res.data);
