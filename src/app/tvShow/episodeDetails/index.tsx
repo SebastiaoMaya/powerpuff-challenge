@@ -32,8 +32,10 @@ const EpisodeDetailsBase: React.FC<Props> = ({ id }) => {
   );
 
   useEffect(() => {
-    !tvShowStore.tvShow && tvShowStore.fetchTvShow();
-    getEpisodeById(id);
+    (async () => {
+      !tvShowStore.tvShow && (await tvShowStore.fetchTvShow());
+      getEpisodeById(id);
+    })();
   }, [tvShowStore, id, getEpisodeById]);
 
   return (
