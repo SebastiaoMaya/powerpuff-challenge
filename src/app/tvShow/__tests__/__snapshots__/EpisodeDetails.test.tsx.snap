@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EpisodeDetails renders EpisodeDetails 1`] = `
+<div>
+  <nav
+    aria-label="breadcrumb"
+    class="chakra-breadcrumb css-0"
+  >
+    <ol
+      class="chakra-breadcrumb__list css-0"
+    >
+      <li
+        class="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <a
+          class="chakra-breadcrumb__link css-0"
+          href="/"
+        >
+          Home
+        </a>
+        <span
+          class="css-syhbcg"
+          role="presentation"
+        >
+          <svg
+            class="chakra-icon css-2u1jce"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </li>
+      <li
+        class="chakra-breadcrumb__list-item css-18biwo"
+      >
+        <span
+          aria-current="page"
+          class="chakra-breadcrumb__link css-0"
+        />
+      </li>
+    </ol>
+  </nav>
+  <p
+    class="chakra-text css-1iec28v"
+  />
+</div>
+`;

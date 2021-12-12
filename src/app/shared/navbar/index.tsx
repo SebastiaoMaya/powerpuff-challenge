@@ -1,4 +1,4 @@
-import { Flex, Stack } from "@chakra-ui/react";
+import { Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { SiteLogo } from "../siteLogo";
 
@@ -10,6 +10,7 @@ export const Navbar: React.FC = () => (
     justifyContent="space-between">
     <Stack alignItems="center" direction="row">
       <SiteLogo />
+      <Text fontSize={["lg", "xl"]}>Powerpuff Girls Challenge!</Text>
     </Stack>
   </Flex>
 );
